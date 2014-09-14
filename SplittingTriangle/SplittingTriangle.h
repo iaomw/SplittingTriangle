@@ -12,6 +12,9 @@
 
 @property (assign, nonatomic) CGFloat duration;
 @property (assign, nonatomic) BOOL clockwise;
+
+// radius of the circle containing the central triangle
+
 @property (assign, nonatomic) CGFloat radius;
 
 - (void)setForeColor:(UIColor *)foreColor andBackColor:(UIColor*)backColor;
