@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C328D10619B44A6D0042516B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C328D10519B44A6D0042516B /* Foundation.framework */; };
+		C328D10819B44A6D0042516B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C328D10719B44A6D0042516B /* CoreGraphics.framework */; };
+		C328D10A19B44A6D0042516B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C328D10919B44A6D0042516B /* UIKit.framework */; };
+		C328D11019B44A6D0042516B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C328D10E19B44A6D0042516B /* InfoPlist.strings */; };
+		C328D11219B44A6D0042516B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C328D11119B44A6D0042516B /* main.m */; };
+		C328D11619B44A6D0042516B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C328D11519B44A6D0042516B /* AppDelegate.m */; };
+		C328D11919B44A6D0042516B /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C328D11719B44A6D0042516B /* Main_iPhone.storyboard */; };
+		C328D11C19B44A6D0042516B /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C328D11A19B44A6D0042516B /* Main_iPad.storyboard */; };
+		C328D11F19B44A6D0042516B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C328D11E19B44A6D0042516B /* ViewController.m */; };
+		C328D12119B44A6D0042516B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C328D12019B44A6D0042516B /* Images.xcassets */; };
+		C328D12819B44A6D0042516B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C328D12719B44A6D0042516B /* XCTest.framework */; };
+		C328D12919B44A6D0042516B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C328D10519B44A6D0042516B /* Foundation.framework */; };
+		C328D12A19B44A6D0042516B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C328D10919B44A6D0042516B /* UIKit.framework */; };
+		C328D13219B44A6D0042516B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C328D13019B44A6D0042516B /* InfoPlist.strings */; };
+		C328D13419B44A6E0042516B /* SplittingTriangleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C328D13319B44A6E0042516B /* SplittingTriangleTests.m */; };
+		C328D13F19B44A900042516B /* SplittingTriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = C328D13E19B44A900042516B /* SplittingTriangle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C328D12B19B44A6D0042516B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C328D0FA19B44A6D0042516B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C328D10119B44A6D0042516B;
+			remoteInfo = SplittingTriangle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C328D10219B44A6D0042516B /* SplittingTriangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplittingTriangle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C328D10519B44A6D0042516B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C328D10719B44A6D0042516B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C328D10919B44A6D0042516B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C328D10D19B44A6D0042516B /* SplittingTriangle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SplittingTriangle-Info.plist"; sourceTree = "<group>"; };
+		C328D10F19B44A6D0042516B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C328D11119B44A6D0042516B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C328D11319B44A6D0042516B /* SplittingTriangle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SplittingTriangle-Prefix.pch"; sourceTree = "<group>"; };
+		C328D11419B44A6D0042516B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C328D11519B44A6D0042516B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C328D11819B44A6D0042516B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		C328D11B19B44A6D0042516B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		C328D11D19B44A6D0042516B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C328D11E19B44A6D0042516B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C328D12019B44A6D0042516B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C328D12619B44A6D0042516B /* SplittingTriangleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplittingTriangleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C328D12719B44A6D0042516B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C328D12F19B44A6D0042516B /* SplittingTriangleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SplittingTriangleTests-Info.plist"; sourceTree = "<group>"; };
+		C328D13119B44A6D0042516B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C328D13319B44A6E0042516B /* SplittingTriangleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplittingTriangleTests.m; sourceTree = "<group>"; };
+		C328D13D19B44A900042516B /* SplittingTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplittingTriangle.h; sourceTree = "<group>"; };
+		C328D13E19B44A900042516B /* SplittingTriangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplittingTriangle.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C328D0FF19B44A6D0042516B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C328D10819B44A6D0042516B /* CoreGraphics.framework in Frameworks */,
+				C328D10A19B44A6D0042516B /* UIKit.framework in Frameworks */,
+				C328D10619B44A6D0042516B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C328D12319B44A6D0042516B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C328D12819B44A6D0042516B /* XCTest.framework in Frameworks */,
+				C328D12A19B44A6D0042516B /* UIKit.framework in Frameworks */,
+				C328D12919B44A6D0042516B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C328D0F919B44A6D0042516B = {
+			isa = PBXGroup;
+			children = (
+				C328D10B19B44A6D0042516B /* SplittingTriangle */,
+				C328D12D19B44A6D0042516B /* SplittingTriangleTests */,
+				C328D10419B44A6D0042516B /* Frameworks */,
+				C328D10319B44A6D0042516B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C328D10319B44A6D0042516B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C328D10219B44A6D0042516B /* SplittingTriangle.app */,
+				C328D12619B44A6D0042516B /* SplittingTriangleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C328D10419B44A6D0042516B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C328D10519B44A6D0042516B /* Foundation.framework */,
+				C328D10719B44A6D0042516B /* CoreGraphics.framework */,
+				C328D10919B44A6D0042516B /* UIKit.framework */,
+				C328D12719B44A6D0042516B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C328D10B19B44A6D0042516B /* SplittingTriangle */ = {
+			isa = PBXGroup;
+			children = (
+				C328D11419B44A6D0042516B /* AppDelegate.h */,
+				C328D11519B44A6D0042516B /* AppDelegate.m */,
+				C328D11719B44A6D0042516B /* Main_iPhone.storyboard */,
+				C328D11A19B44A6D0042516B /* Main_iPad.storyboard */,
+				C328D11D19B44A6D0042516B /* ViewController.h */,
+				C328D11E19B44A6D0042516B /* ViewController.m */,
+				C328D13D19B44A900042516B /* SplittingTriangle.h */,
+				C328D13E19B44A900042516B /* SplittingTriangle.m */,
+				C328D12019B44A6D0042516B /* Images.xcassets */,
+				C328D10C19B44A6D0042516B /* Supporting Files */,
+			);
+			path = SplittingTriangle;
+			sourceTree = "<group>";
+		};
+		C328D10C19B44A6D0042516B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C328D10D19B44A6D0042516B /* SplittingTriangle-Info.plist */,
+				C328D10E19B44A6D0042516B /* InfoPlist.strings */,
+				C328D11119B44A6D0042516B /* main.m */,
+				C328D11319B44A6D0042516B /* SplittingTriangle-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C328D12D19B44A6D0042516B /* SplittingTriangleTests */ = {
+			isa = PBXGroup;
+			children = (
+				C328D13319B44A6E0042516B /* SplittingTriangleTests.m */,
+				C328D12E19B44A6D0042516B /* Supporting Files */,
+			);
+			path = SplittingTriangleTests;
+			sourceTree = "<group>";
+		};
+		C328D12E19B44A6D0042516B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C328D12F19B44A6D0042516B /* SplittingTriangleTests-Info.plist */,
+				C328D13019B44A6D0042516B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C328D10119B44A6D0042516B /* SplittingTriangle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C328D13719B44A6E0042516B /* Build configuration list for PBXNativeTarget "SplittingTriangle" */;
+			buildPhases = (
+				C328D0FE19B44A6D0042516B /* Sources */,
+				C328D0FF19B44A6D0042516B /* Frameworks */,
+				C328D10019B44A6D0042516B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SplittingTriangle;
+			productName = SplittingTriangle;
+			productReference = C328D10219B44A6D0042516B /* SplittingTriangle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C328D12519B44A6D0042516B /* SplittingTriangleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C328D13A19B44A6E0042516B /* Build configuration list for PBXNativeTarget "SplittingTriangleTests" */;
+			buildPhases = (
+				C328D12219B44A6D0042516B /* Sources */,
+				C328D12319B44A6D0042516B /* Frameworks */,
+				C328D12419B44A6D0042516B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C328D12C19B44A6D0042516B /* PBXTargetDependency */,
+			);
+			name = SplittingTriangleTests;
+			productName = SplittingTriangleTests;
+			productReference = C328D12619B44A6D0042516B /* SplittingTriangleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C328D0FA19B44A6D0042516B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = iaomw;
+				TargetAttributes = {
+					C328D12519B44A6D0042516B = {
+						TestTargetID = C328D10119B44A6D0042516B;
+					};
+				};
+			};
+			buildConfigurationList = C328D0FD19B44A6D0042516B /* Build configuration list for PBXProject "SplittingTriangle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C328D0F919B44A6D0042516B;
+			productRefGroup = C328D10319B44A6D0042516B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C328D10119B44A6D0042516B /* SplittingTriangle */,
+				C328D12519B44A6D0042516B /* SplittingTriangleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C328D10019B44A6D0042516B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C328D11C19B44A6D0042516B /* Main_iPad.storyboard in Resources */,
+				C328D12119B44A6D0042516B /* Images.xcassets in Resources */,
+				C328D11919B44A6D0042516B /* Main_iPhone.storyboard in Resources */,
+				C328D11019B44A6D0042516B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C328D12419B44A6D0042516B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C328D13219B44A6D0042516B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C328D0FE19B44A6D0042516B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C328D11F19B44A6D0042516B /* ViewController.m in Sources */,
+				C328D11619B44A6D0042516B /* AppDelegate.m in Sources */,
+				C328D13F19B44A900042516B /* SplittingTriangle.m in Sources */,
+				C328D11219B44A6D0042516B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C328D12219B44A6D0042516B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C328D13419B44A6E0042516B /* SplittingTriangleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C328D12C19B44A6D0042516B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C328D10119B44A6D0042516B /* SplittingTriangle */;
+			targetProxy = C328D12B19B44A6D0042516B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C328D10E19B44A6D0042516B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C328D10F19B44A6D0042516B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C328D11719B44A6D0042516B /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C328D11819B44A6D0042516B /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		C328D11A19B44A6D0042516B /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C328D11B19B44A6D0042516B /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		C328D13019B44A6D0042516B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C328D13119B44A6D0042516B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C328D13519B44A6E0042516B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C328D13619B44A6E0042516B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C328D13819B44A6E0042516B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SplittingTriangle/SplittingTriangle-Prefix.pch";
+				INFOPLIST_FILE = "SplittingTriangle/SplittingTriangle-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C328D13919B44A6E0042516B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SplittingTriangle/SplittingTriangle-Prefix.pch";
+				INFOPLIST_FILE = "SplittingTriangle/SplittingTriangle-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C328D13B19B44A6E0042516B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SplittingTriangle.app/SplittingTriangle";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SplittingTriangle/SplittingTriangle-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SplittingTriangleTests/SplittingTriangleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C328D13C19B44A6E0042516B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SplittingTriangle.app/SplittingTriangle";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SplittingTriangle/SplittingTriangle-Prefix.pch";
+				INFOPLIST_FILE = "SplittingTriangleTests/SplittingTriangleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C328D0FD19B44A6D0042516B /* Build configuration list for PBXProject "SplittingTriangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C328D13519B44A6E0042516B /* Debug */,
+				C328D13619B44A6E0042516B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C328D13719B44A6E0042516B /* Build configuration list for PBXNativeTarget "SplittingTriangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C328D13819B44A6E0042516B /* Debug */,
+				C328D13919B44A6E0042516B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C328D13A19B44A6E0042516B /* Build configuration list for PBXNativeTarget "SplittingTriangleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C328D13B19B44A6E0042516B /* Debug */,
+				C328D13C19B44A6E0042516B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C328D0FA19B44A6D0042516B /* Project object */;
+}
