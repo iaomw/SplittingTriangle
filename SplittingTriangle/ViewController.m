@@ -38,6 +38,8 @@
     
     [self.st setRadius:22];
     
+    [self.st setPaused:NO];
+    
     [self.st setCenter:self.view.center];
     
     [self.view addSubview:self.st];

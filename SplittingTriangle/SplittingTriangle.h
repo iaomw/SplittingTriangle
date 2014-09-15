@@ -10,6 +10,8 @@
 
 @interface SplittingTriangle : UIView
 
+@property(getter=isPaused, nonatomic) BOOL paused;
+
 @property (assign, nonatomic) CGFloat duration;
 @property (assign, nonatomic) BOOL clockwise;
 

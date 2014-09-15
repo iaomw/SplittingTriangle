@@ -29,12 +29,7 @@
 {
     self = [super initWithFrame:frame];
     
-    if (self) {
-        
-        self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(update:)];
-        
-        [self.displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
-    }
+    if (self) {}
     
     return self;
 }
@@ -47,6 +42,23 @@
 }
 
 # pragma mark - Getter&Setter
+
+- (void)setPaused:(BOOL)paused {
+    
+    [self.displayLink setPaused:paused];
+}
+
+- (CADisplayLink*)displayLink {
+    
+    if (!_displayLink) {
+        
+        _displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(update:)];
+        
+        [_displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
+    }
+    
+    return _displayLink;
+}
 
 - (CGFloat)duration {
     

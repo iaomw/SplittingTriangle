@@ -20,6 +20,7 @@ SplittingTriangle *st = [[SplittingTriangle alloc] initWithFrame:CGRectMake(0, 0
 [st setClockwise:YES];
 [st setDuration:2.4];
 [st setRadius:22];
+[st setPaused:NO];
 
 [self.view addSubview:st];
 
