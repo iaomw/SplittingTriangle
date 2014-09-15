@@ -12,6 +12,7 @@
 
 @interface ViewController ()
 
+@property IBOutlet UISwitch *liveSwitch;
 @property IBOutlet UISlider *durationSlider;
 @property IBOutlet UISwitch *directionSwitch;
 
@@ -53,6 +54,11 @@
 - (IBAction)directionChanged:(UISwitch*)sender {
     
     [self.st setClockwise:sender.on];
+}
+
+- (IBAction)liveChange:(UISwitch*)sender {
+    
+    [self.st setPaused:!sender.on];
 }
 
 - (void)didReceiveMemoryWarning
