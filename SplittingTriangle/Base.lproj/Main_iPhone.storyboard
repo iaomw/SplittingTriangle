@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A386a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
@@ -18,20 +18,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DBQ-DD-NhV">
-                                <rect key="frame" x="16" y="517" width="51" height="31"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DBQ-DD-NhV">
+                                <rect key="frame" x="16" y="529" width="52" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="1nD-hU-3CZ"/>
+                                    <constraint firstAttribute="height" constant="31" id="vCa-6c-4rs"/>
+                                </constraints>
                                 <connections>
                                     <action selector="directionChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="HDK-xQ-gHJ"/>
                                 </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bhO-4L-Ixk">
-                                <rect key="frame" x="255" y="517" width="51" height="31"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bhO-4L-Ixk">
+                                <rect key="frame" x="254" y="529" width="52" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="C9Y-uV-dPR"/>
+                                    <constraint firstAttribute="height" constant="31" id="wR2-c8-BGW"/>
+                                </constraints>
                                 <connections>
                                     <action selector="liveChange:" destination="vXZ-lx-hvc" eventType="valueChanged" id="VEn-xD-Tp6"/>
                                 </connections>
                             </switch>
-                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2.2000000000000002" minValue="0.40000000000000002" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="vOq-y3-Wb3">
-                                <rect key="frame" x="96" y="518" width="129" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2.2000000000000002" minValue="0.40000000000000002" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="vOq-y3-Wb3">
+                                <rect key="frame" x="96" y="530" width="128" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6jl-Jt-VeP"/>
+                                </constraints>
                                 <connections>
                                     <action selector="durationChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="hZ7-Ka-0K8"/>
                                 </connections>
@@ -39,12 +50,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="DBQ-DD-NhV" secondAttribute="bottom" constant="20" id="Jes-bO-ZfE"/>
-                            <constraint firstItem="DBQ-DD-NhV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="R4c-ca-Prk"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="bhO-4L-Ixk" secondAttribute="bottom" constant="20" id="max-B3-sG4"/>
-                            <constraint firstItem="bhO-4L-Ixk" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="nB2-ob-waE"/>
-                            <constraint firstAttribute="centerX" secondItem="vOq-y3-Wb3" secondAttribute="centerX" id="skf-JW-K7q"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="vOq-y3-Wb3" secondAttribute="bottom" constant="20" id="v7G-FS-PG1"/>
+                            <constraint firstItem="bhO-4L-Ixk" firstAttribute="leading" secondItem="vOq-y3-Wb3" secondAttribute="trailing" constant="32" id="CGc-Z0-hLU"/>
+                            <constraint firstItem="DBQ-DD-NhV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="DnP-eH-e5r"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="bhO-4L-Ixk" secondAttribute="bottom" constant="8" symbolic="YES" id="JNG-PB-000"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="DBQ-DD-NhV" secondAttribute="bottom" constant="8" symbolic="YES" id="RVs-DW-rgw"/>
+                            <constraint firstItem="bhO-4L-Ixk" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="W8s-6G-GUO"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="vOq-y3-Wb3" secondAttribute="bottom" constant="8" symbolic="YES" id="gkW-vu-nTT"/>
+                            <constraint firstItem="vOq-y3-Wb3" firstAttribute="leading" secondItem="DBQ-DD-NhV" secondAttribute="trailing" constant="32" id="yqU-Nb-naI"/>
                         </constraints>
                     </view>
                     <connections>
