@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 	s.source			= { :git => 'https://github.com/iaomw/SplittingTriangle.git', :tag => s.version.to_s }
 	s.platform			= :ios, '7.0'	
-	s.source_files			= 'SplittingTriangle.*'
+	s.source_files			= 'SplittingTriangle/SplittingTriangle.*'
 	s.frameworks			= 'QuartzCore', 'CoreGraphics'
 	s.requires_arc			= true
 
