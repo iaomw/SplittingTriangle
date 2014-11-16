@@ -17,6 +17,8 @@
 @property (nonatomic, assign) CGFloat rotateAngle;
 @property (nonatomic, assign) CGFloat rotateDelta;
 
+@property (nonatomic, assign) BOOL clockwising;
+
 @property (strong, nonatomic) UIColor *foreColor;
 
 @property (nonatomic, assign) CGFloat ratio;
@@ -97,7 +99,7 @@
     NSTimeInterval duration = displayLink.duration;
     
     self.rotateDelta = (M_PI/3)/(self.duration/duration);
-    self.rotateAngle += self.clockwise?_rotateDelta:-_rotateDelta;
+    self.rotateAngle += self.clockwising?_rotateDelta:-_rotateDelta;
     
     CGFloat ratio = fmod(fabs(self.rotateAngle), M_PI/3)/(M_PI/3);
     
@@ -109,6 +111,8 @@
         
         self.rotateDelta = 0;
         self.rotateAngle = 0;
+        
+        self.clockwising = self.clockwise;
         
     } else {
         

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A386a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -42,6 +42,7 @@
                                 <rect key="frame" x="96" y="530" width="128" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6jl-Jt-VeP"/>
+                                    <constraint firstAttribute="width" constant="124" id="XZk-Kj-M9f"/>
                                 </constraints>
                                 <connections>
                                     <action selector="durationChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="hZ7-Ka-0K8"/>
@@ -50,13 +51,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bhO-4L-Ixk" firstAttribute="leading" secondItem="vOq-y3-Wb3" secondAttribute="trailing" constant="32" id="CGc-Z0-hLU"/>
-                            <constraint firstItem="DBQ-DD-NhV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="DnP-eH-e5r"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="bhO-4L-Ixk" secondAttribute="bottom" constant="8" symbolic="YES" id="JNG-PB-000"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="DBQ-DD-NhV" secondAttribute="bottom" constant="8" symbolic="YES" id="RVs-DW-rgw"/>
-                            <constraint firstItem="bhO-4L-Ixk" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="W8s-6G-GUO"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="vOq-y3-Wb3" secondAttribute="bottom" constant="8" symbolic="YES" id="gkW-vu-nTT"/>
-                            <constraint firstItem="vOq-y3-Wb3" firstAttribute="leading" secondItem="DBQ-DD-NhV" secondAttribute="trailing" constant="32" id="yqU-Nb-naI"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="bhO-4L-Ixk" secondAttribute="bottom" constant="8" id="56M-Wj-7Dz"/>
+                            <constraint firstAttribute="centerX" secondItem="vOq-y3-Wb3" secondAttribute="centerX" id="68C-iY-5cN"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="DBQ-DD-NhV" secondAttribute="bottom" constant="8" id="8yd-r2-Qxl"/>
+                            <constraint firstItem="DBQ-DD-NhV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="i16-uF-fNZ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="vOq-y3-Wb3" secondAttribute="bottom" constant="8" id="lno-DH-ibe"/>
+                            <constraint firstItem="bhO-4L-Ixk" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="s5C-Wq-qDE"/>
                         </constraints>
                     </view>
                     <connections>

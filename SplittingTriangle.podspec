@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 	s.name					= 'SplittingTriangle'
-	s.version				= '1.0'
+	s.version				= '1.1'
 	s.summary				= 'A simple loading style animation.'
 	s.homepage				= 'https://github.com/iaomw/SplittingTriangle'
 	s.license				= 'MIT'
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 	s.source				= { :git => 'https://github.com/iaomw/SplittingTriangle.git', :tag => s.version.to_s }
 	s.platform				= :ios, '7.0'	
-	s.source_files			= 'SplittingTriangle/*.{h,m}'
+	s.source_files			= 'essence/*.{h,m}'
 	s.frameworks			= 'QuartzCore', 'CoreGraphics'
 	s.requires_arc			= true
 

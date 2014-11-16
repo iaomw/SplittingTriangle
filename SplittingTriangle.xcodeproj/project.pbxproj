@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		577B5E7E1A18A8DA007D099B /* SplittingTriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 577B5E7D1A18A8DA007D099B /* SplittingTriangle.m */; };
 		C328D10619B44A6D0042516B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C328D10519B44A6D0042516B /* Foundation.framework */; };
 		C328D10A19B44A6D0042516B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C328D10919B44A6D0042516B /* UIKit.framework */; };
 		C328D11019B44A6D0042516B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C328D10E19B44A6D0042516B /* InfoPlist.strings */; };
@@ -21,7 +22,6 @@
 		C328D12A19B44A6D0042516B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C328D10919B44A6D0042516B /* UIKit.framework */; };
 		C328D13219B44A6D0042516B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C328D13019B44A6D0042516B /* InfoPlist.strings */; };
 		C328D13419B44A6E0042516B /* SplittingTriangleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C328D13319B44A6E0042516B /* SplittingTriangleTests.m */; };
-		C328D13F19B44A900042516B /* SplittingTriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = C328D13E19B44A900042516B /* SplittingTriangle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		577B5E7C1A18A8DA007D099B /* SplittingTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplittingTriangle.h; sourceTree = "<group>"; };
+		577B5E7D1A18A8DA007D099B /* SplittingTriangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplittingTriangle.m; sourceTree = "<group>"; };
 		C328D10219B44A6D0042516B /* SplittingTriangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplittingTriangle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C328D10519B44A6D0042516B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C328D10719B44A6D0042516B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,8 +57,6 @@
 		C328D12F19B44A6D0042516B /* SplittingTriangleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SplittingTriangleTests-Info.plist"; sourceTree = "<group>"; };
 		C328D13119B44A6D0042516B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C328D13319B44A6E0042516B /* SplittingTriangleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplittingTriangleTests.m; sourceTree = "<group>"; };
-		C328D13D19B44A900042516B /* SplittingTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplittingTriangle.h; sourceTree = "<group>"; };
-		C328D13E19B44A900042516B /* SplittingTriangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplittingTriangle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		577B5E7B1A18A8DA007D099B /* essence */ = {
+			isa = PBXGroup;
+			children = (
+				577B5E7C1A18A8DA007D099B /* SplittingTriangle.h */,
+				577B5E7D1A18A8DA007D099B /* SplittingTriangle.m */,
+			);
+			path = essence;
+			sourceTree = "<group>";
+		};
 		C328D0F919B44A6D0042516B = {
 			isa = PBXGroup;
 			children = (
@@ -117,13 +126,9 @@
 			children = (
 				C328D11419B44A6D0042516B /* AppDelegate.h */,
 				C328D11519B44A6D0042516B /* AppDelegate.m */,
-				C328D11719B44A6D0042516B /* Main_iPhone.storyboard */,
-				C328D11A19B44A6D0042516B /* Main_iPad.storyboard */,
+				577B5E7B1A18A8DA007D099B /* essence */,
 				C328D11D19B44A6D0042516B /* ViewController.h */,
 				C328D11E19B44A6D0042516B /* ViewController.m */,
-				C328D13D19B44A900042516B /* SplittingTriangle.h */,
-				C328D13E19B44A900042516B /* SplittingTriangle.m */,
-				C328D12019B44A6D0042516B /* Images.xcassets */,
 				C328D10C19B44A6D0042516B /* Supporting Files */,
 			);
 			path = SplittingTriangle;
@@ -132,6 +137,9 @@
 		C328D10C19B44A6D0042516B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C328D12019B44A6D0042516B /* Images.xcassets */,
+				C328D11719B44A6D0042516B /* Main_iPhone.storyboard */,
+				C328D11A19B44A6D0042516B /* Main_iPad.storyboard */,
 				C328D10D19B44A6D0042516B /* SplittingTriangle-Info.plist */,
 				C328D10E19B44A6D0042516B /* InfoPlist.strings */,
 				C328D11119B44A6D0042516B /* main.m */,
@@ -258,7 +266,7 @@
 			files = (
 				C328D11F19B44A6D0042516B /* ViewController.m in Sources */,
 				C328D11619B44A6D0042516B /* AppDelegate.m in Sources */,
-				C328D13F19B44A900042516B /* SplittingTriangle.m in Sources */,
+				577B5E7E1A18A8DA007D099B /* SplittingTriangle.m in Sources */,
 				C328D11219B44A6D0042516B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

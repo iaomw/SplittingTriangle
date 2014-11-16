@@ -33,10 +33,7 @@
     [self.st setForeColor:[UIColor colorWithRed:25.0/255 green:191.0/255 blue:214.0/255 alpha:1]
              andBackColor:[UIColor clearColor]];
     
-    [self.st setClockwise:YES];
-    
     [self.st setDuration:2.4];
-    
     [self.st setRadius:22];
     
     [self.st setPaused:NO];
