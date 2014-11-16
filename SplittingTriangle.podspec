@@ -6,12 +6,13 @@ Pod::Spec.new do |s|
 	s.homepage				= 'https://github.com/iaomw/SplittingTriangle'
 	s.license				= 'MIT'
 
-	s.author				= { 'Sandy Lee' => 'iaomw@live.com' }
+	s.author			= { 'Sandy Lee' => 'iaomw@live.com' }
 
 	s.source				= { :git => 'https://github.com/iaomw/SplittingTriangle.git', :tag => s.version.to_s }
-	s.platform				= :ios, '7.0'	
-	s.source_files			= 'essence/*.{h,m}'
-	s.frameworks			= 'QuartzCore', 'CoreGraphics'
+
 	s.requires_arc			= true
+	s.platform				= :ios, '7.0'	
+	s.source_files			= 'SplittingTriangle/essence/*.{h,m}'
+	s.frameworks			= 'QuartzCore', 'CoreGraphics'
 
 end
