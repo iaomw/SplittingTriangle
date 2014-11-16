@@ -94,8 +94,8 @@
 		C328D0F919B44A6D0042516B = {
 			isa = PBXGroup;
 			children = (
-				C328D10B19B44A6D0042516B /* SplittingTriangle */,
 				C328D12D19B44A6D0042516B /* SplittingTriangleTests */,
+				C328D10B19B44A6D0042516B /* SplittingTriangle */,
 				C328D10419B44A6D0042516B /* Frameworks */,
 				C328D10319B44A6D0042516B /* Products */,
 			);

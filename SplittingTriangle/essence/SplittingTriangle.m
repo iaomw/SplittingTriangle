@@ -92,6 +92,16 @@
     return _radius;
 }
 
+- (CGFloat)ratio {
+    
+    if (!_ratio) {
+        
+        self.clockwising = self.clockwise;
+    }
+    
+    return _ratio;
+}
+
 # pragma mark - Animation
 
 - (void)update:(CADisplayLink *)displayLink
