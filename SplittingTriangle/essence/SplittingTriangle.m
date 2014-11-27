@@ -168,31 +168,36 @@
     
     CGContextAddPath(contextRef, centerPath);
     
+    CGPathRelease(originPath);
+    
     cRadius*=(1+self.ratio);
     
     for (int i=0; i<3; i++) {
         
-        CGPathRef transformed;
-        
         CGFloat angle = M_PI/6 + i*M_PI*2/3 + self.rotateAngle;
         
         CGAffineTransform transform = CGAffineTransformIdentity;
-        
         CGSize delta = CGSizeMake(cos(angle)*cRadius,sin(angle)*cRadius);
         transform = CGAffineTransformTranslate(transform, delta.width, delta.height);
         
-        transformed = createPathRotatedAroundCenter(centerPath, center, angle+M_PI/6-self.rotateAngle);
-        transformed = createPathScaledAroundCenter(transformed, center, 1-_ratio);
+    CGPathRef rotated = createPathRotatedAroundCenter(centerPath, center, angle+M_PI/6-self.rotateAngle);
+    CGPathRef scaled = createPathScaledAroundCenter(rotated, center, 1-self.ratio);
         
-        transformed = CGPathCreateMutableCopyByTransformingPath(transformed, &transform);
+    CGPathRef transformed = CGPathCreateCopyByTransformingPath(scaled, &transform);
         
         CGContextAddPath(contextRef, transformed);
+        
+        CGPathRelease(rotated);
+        CGPathRelease(scaled);
+        
+        CGPathRelease(transformed);
     }
+    
+    CGPathRelease(centerPath);
     
     [self.foreColor setFill];
     
     CGContextFillPath(contextRef);
-    
     CGContextRestoreGState(contextRef);
 }
 
@@ -201,19 +206,23 @@
 static CGPathRef createPathRotatedAroundCenter(CGPathRef path, CGPoint center, CGFloat radians) {
     
     CGAffineTransform transform = CGAffineTransformIdentity;
+    
     transform = CGAffineTransformTranslate(transform, center.x, center.y);
     transform = CGAffineTransformRotate(transform, radians);
     transform = CGAffineTransformTranslate(transform, -center.x, -center.y);
-    return CGPathCreateMutableCopyByTransformingPath(path, &transform);
+    
+    return CGPathCreateCopyByTransformingPath(path, &transform);
 }
 
 static CGPathRef createPathScaledAroundCenter(CGPathRef path, CGPoint center, CGFloat ratio) {
     
     CGAffineTransform transform = CGAffineTransformIdentity;
+    
     transform = CGAffineTransformTranslate(transform, center.x, center.y);
     transform = CGAffineTransformScale(transform, ratio, ratio);
     transform = CGAffineTransformTranslate(transform, -center.x, -center.y);
-    return CGPathCreateMutableCopyByTransformingPath(path, &transform);
+    
+    return CGPathCreateCopyByTransformingPath(path, &transform);
 }
 
 @end
