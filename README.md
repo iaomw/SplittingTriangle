@@ -3,7 +3,7 @@ SplittingTriangle
 
 iOS port of [Splitting triangle](https://dribbble.com/shots/1678788-Splitting-triangle).
 
-<img src="SplittingTriangle.gif"/>
+<img src="SplittingTriangle.png"/>
 
 ## Installation
 
