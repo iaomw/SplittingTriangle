@@ -12,8 +12,6 @@
 
 @property (nonatomic, strong) CADisplayLink *displayLink;
 
-@property (nonatomic, assign) CGFloat baseAngle;
-
 @property (nonatomic, assign) CGFloat rotateAngle;
 @property (nonatomic, assign) CGFloat rotateDelta;
 
@@ -96,7 +94,9 @@
     
     if (!_ratio) {
         
-        self.clockwising = self.clockwise;
+        _ratio = CGFLOAT_MIN;
+        
+        _clockwising = _clockwise;
     }
     
     return _ratio;
@@ -109,7 +109,7 @@
     NSTimeInterval duration = displayLink.duration;
     
     self.rotateDelta = (M_PI/3)/(self.duration/duration);
-    self.rotateAngle += self.clockwising?_rotateDelta:-_rotateDelta;
+    self.rotateAngle += _clockwising?_rotateDelta:-_rotateDelta;
     
     CGFloat ratio = fmod(fabs(self.rotateAngle), M_PI/3)/(M_PI/3);
     
@@ -117,12 +117,10 @@
         
         self.ratio = ratio;
         
-        self.baseAngle=M_PI/3+self.rotateAngle;
-        
         self.rotateDelta = 0;
         self.rotateAngle = 0;
         
-        self.clockwising = self.clockwise;
+        _clockwising = _clockwise;
         
     } else {
         
@@ -164,11 +162,9 @@
     
     CGPathAddLines(originPath, nil, points, 3);
     
-    CGPathRef centerPath = createPathRotatedAroundCenter(originPath, center, self.baseAngle+self.rotateAngle);
+    CGPathRef centerPath = createPathRotatedAroundCenter(originPath, center, self.rotateAngle);
     
     CGContextAddPath(contextRef, centerPath);
-    
-    CGPathRelease(originPath);
     
     cRadius*=(1+self.ratio);
     
@@ -182,17 +178,16 @@
         
     CGPathRef rotated = createPathRotatedAroundCenter(centerPath, center, angle+M_PI/6-self.rotateAngle);
     CGPathRef scaled = createPathScaledAroundCenter(rotated, center, 1-self.ratio);
-        
     CGPathRef transformed = CGPathCreateCopyByTransformingPath(scaled, &transform);
         
         CGContextAddPath(contextRef, transformed);
         
-        CGPathRelease(rotated);
         CGPathRelease(scaled);
-        
+        CGPathRelease(rotated);
         CGPathRelease(transformed);
     }
     
+    CGPathRelease(originPath);
     CGPathRelease(centerPath);
     
     [self.foreColor setFill];

@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 	s.name					= 'SplittingTriangle'
-	s.version				= '1.1'
+	s.version				= '1.11'
 	s.summary				= 'A simple loading style animation.'
 	s.homepage				= 'https://github.com/iaomw/SplittingTriangle'
 	s.license				= 'MIT'
